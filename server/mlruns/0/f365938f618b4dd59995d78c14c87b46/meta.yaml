@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/f365938f618b4dd59995d78c14c87b46/artifacts
+end_time: 1746198265932
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f365938f618b4dd59995d78c14c87b46
+run_name: LogisticRegression
+run_uuid: f365938f618b4dd59995d78c14c87b46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746198261708
+status: 3
+tags: []
+user_id: PRANAV

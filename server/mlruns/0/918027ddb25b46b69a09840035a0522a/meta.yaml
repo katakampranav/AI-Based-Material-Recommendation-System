@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/918027ddb25b46b69a09840035a0522a/artifacts
+end_time: 1746198281857
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 918027ddb25b46b69a09840035a0522a
+run_name: DecisionTreeClassifier
+run_uuid: 918027ddb25b46b69a09840035a0522a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746198277869
+status: 3
+tags: []
+user_id: PRANAV

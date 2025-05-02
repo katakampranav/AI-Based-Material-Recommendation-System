@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1746198277829
+current_stage: None
+description: ''
+last_updated_timestamp: 1746198277829
+name: GaussianNB_Model
+run_id: 19e319c234fe43a4a65900e4b56403e1
+run_link: ''
+source: mlflow-artifacts:/0/19e319c234fe43a4a65900e4b56403e1/artifacts/model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/0/19e319c234fe43a4a65900e4b56403e1/artifacts/model
+user_id: null
+version: 1

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/2d5104349c70436a8bf13b256e84be8f/artifacts
+end_time: 1746198295464
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2d5104349c70436a8bf13b256e84be8f
+run_name: RandomForestClassifier
+run_uuid: 2d5104349c70436a8bf13b256e84be8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746198281884
+status: 3
+tags: []
+user_id: PRANAV
