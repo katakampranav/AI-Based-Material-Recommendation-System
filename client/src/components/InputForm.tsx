@@ -159,7 +159,7 @@ const InputForm: React.FC<InputFormProps> = ({ onSubmit, isLoading }) => {
               className={`block w-full px-3 py-2.5 rounded-lg border ${
                 errors.durability ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500'
               } focus:border-blue-500 focus:ring-2 focus:ring-opacity-20 transition-all`}
-              placeholder="Enter durability (1-10)"
+              placeholder="Enter durability (1-9)"
             />
             {errors.durability && <p className="text-red-500 text-xs mt-1">{errors.durability}</p>}
           </div>
