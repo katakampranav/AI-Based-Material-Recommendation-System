@@ -7,6 +7,7 @@ interface CompetitorAnalysisProps {
 }
 
 const CompetitorAnalysis: React.FC<CompetitorAnalysisProps> = ({ data }) => {
+  console.log("Competitor:", data);
   const [expandedRemarks, setExpandedRemarks] = useState<string | null>(null);
 
   const toggleRemarks = (material: string) => {
@@ -20,7 +21,7 @@ const CompetitorAnalysis: React.FC<CompetitorAnalysisProps> = ({ data }) => {
   return (
     <div className="bg-white p-6 rounded-xl shadow-lg overflow-x-auto">
       <h2 className="text-xl font-bold text-gray-800 mb-4">Competitor Analysis</h2>
-      
+
       <table className="min-w-full divide-y divide-gray-200">
         <thead className="bg-gray-50">
           <tr>

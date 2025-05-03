@@ -7,6 +7,8 @@ interface TopPredictionsProps {
 }
 
 const TopPredictions: React.FC<TopPredictionsProps> = ({ predictions, analysisData }) => {
+  console.log("Predictions:", predictions)
+  console.log("Analysis Data:", analysisData)
   // Find the analysis data for each prediction
   const predictionDetails = predictions.map(prediction => {
     return analysisData.find(item => item.material === prediction);
@@ -16,9 +18,9 @@ const TopPredictions: React.FC<TopPredictionsProps> = ({ predictions, analysisDa
     if (!prediction) return 'bg-gray-200';
 
     // Colors based on suitability
-    if (prediction.within_budget === 'Yes' && 
-        (prediction.suitable_for_coastal_environment === 'Yes' || 
-         prediction.eco_friendly === 'Yes')) {
+    if (prediction.within_budget === 'Yes' &&
+      (prediction.suitable_for_coastal_environment === 'Yes' ||
+        prediction.eco_friendly === 'Yes')) {
       return 'bg-green-100 text-green-600';
     } else if (prediction.within_budget === 'No') {
       return 'bg-red-100 text-red-600';
@@ -30,9 +32,9 @@ const TopPredictions: React.FC<TopPredictionsProps> = ({ predictions, analysisDa
   const getPredictionIcon = (prediction: any) => {
     if (!prediction) return <AlertTriangle size={20} />;
 
-    if (prediction.within_budget === 'Yes' && 
-        (prediction.suitable_for_coastal_environment === 'Yes' || 
-         prediction.eco_friendly === 'Yes')) {
+    if (prediction.within_budget === 'Yes' &&
+      (prediction.suitable_for_coastal_environment === 'Yes' ||
+        prediction.eco_friendly === 'Yes')) {
       return <Check size={20} />;
     } else if (prediction.within_budget === 'No') {
       return <AlertTriangle size={20} />;
@@ -47,10 +49,10 @@ const TopPredictions: React.FC<TopPredictionsProps> = ({ predictions, analysisDa
         <Award className="text-blue-700 mr-2" size={24} />
         <h2 className="text-xl font-bold text-gray-800">Top Material Predictions</h2>
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {predictionDetails.map((prediction, index) => (
-          <div 
+          <div
             key={index}
             className="border border-gray-200 rounded-lg p-4 transition-all hover:shadow-md"
           >
@@ -60,7 +62,7 @@ const TopPredictions: React.FC<TopPredictionsProps> = ({ predictions, analysisDa
               </div>
               <h3 className="text-lg font-semibold">{predictions[index]}</h3>
             </div>
-            
+
             {prediction && (
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">

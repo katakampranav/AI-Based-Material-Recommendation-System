@@ -3,6 +3,7 @@ import flask_cors
 import pickle
 import pandas as pd
 import numpy as np
+import json
 import google.generativeai as genai
 from dotenv import load_dotenv
 import os
@@ -140,10 +141,18 @@ def predict():
         """
 
         gemini_response = gemini_model.generate_content(prompt)
-        result = gemini_response.text
-        cleaned_response = result.strip("json\n").strip("")
+        # result = gemini_response.text
+        # cleaned_response = result.strip("json\n").strip("")
+        raw_text = gemini_response.text.strip()
 
-        return cleaned_response, 200
+        # Clean: strip code block markdown
+        if raw_text.startswith("```json"):
+            raw_text = raw_text.removeprefix("```json").strip()
+        if raw_text.endswith("```"):
+            raw_text = raw_text.removesuffix("```").strip()
+
+        parsed_response = json.loads(raw_text)
+        return jsonify(parsed_response), 200
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
