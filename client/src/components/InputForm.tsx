@@ -146,7 +146,7 @@ const InputForm: React.FC<InputFormProps> = ({ onSubmit, isLoading }) => {
           {/* Durability */}
           <div className="space-y-2">
             <label htmlFor="durability" className="block text-sm font-medium text-gray-700">
-              Durability (1-10)
+              Durability (1-9)
             </label>
             <input
               type="number"
