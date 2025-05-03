@@ -1,7 +1,10 @@
 import axios from 'axios';
 import { FormData, RecommendationResponse } from '../types';
+import { config } from '../config';
 
-const API_URL = 'http://localhost:5000/api/v1';
+const API_URL = config.backendUrl;
+
+console.log("API URL:", API_URL);
 
 export const getMaterialRecommendations = async (formData: FormData): Promise<RecommendationResponse> => {
   try {
@@ -14,7 +17,7 @@ export const getMaterialRecommendations = async (formData: FormData): Promise<Re
       Max_Lead_Time: formData.leadTime
     };
 
-    const response = await axios.post(`${API_URL}/predict`, payload);
+    const response = await axios.post(`${API_URL}/api/v1/predict`, payload);
     return response.data;
   } catch (error) {
     console.error('Error fetching recommendations:', error);
