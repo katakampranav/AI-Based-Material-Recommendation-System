@@ -2,6 +2,7 @@ import axios from 'axios';
 import { FormData, RecommendationResponse } from '../types';
 import { config } from '../config';
 
+// Ensure the backend URL is set correctly
 const API_URL = config.backendUrl;
 
 console.log("API URL:", API_URL);
