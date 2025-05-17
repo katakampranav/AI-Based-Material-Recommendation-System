@@ -9,7 +9,7 @@ An end-to-end intelligent material recommendation platform that predicts suitabl
 - Predicts top 3 suitable materials from 22 options using machine learning.
 - Integrated with Gemini LLM for detailed analysis, cost comparison, and insights.
 - Tracked and logged experiments using MLflow.
-- Frontend deployed with **Vercel**, backend deployed with **Docker + AWS EC2**.
+- Frontend deployed with **Vercel**, backend deployed with **Render**.
 - Model, encoder, and scaler saved using `pickle` for reproducible inference.
 
 ---
