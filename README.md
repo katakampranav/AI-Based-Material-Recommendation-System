@@ -55,17 +55,6 @@ An end-to-end intelligent material recommendation platform that predicts suitabl
 | Component        | Tech Used                      |
 |------------------|-------------------------------|
 | ML Model         | Scikit-learn (RandomForest)    |
-| Experimenting and Tracking         | MLflow                         |
-| Backend          | Flask                          |
-| Frontend         | React + Vercel                 |
-| LLM Integration  | Gemini API                     |
-| Containerization | Docker                         |
-| Deployment       | AWS EC2, Docker Hub            |
-
-
-| Component        | Tech Used                      |
-|------------------|-------------------------------|
-| ML Model         | Scikit-learn (RandomForest)    |
 | Experiment and Tracking | MLflow                         |
 | Backend          | Flask                          |
 | Frontend         | React + Vercel                 |
@@ -76,7 +65,6 @@ An end-to-end intelligent material recommendation platform that predicts suitabl
 
 ## Project Architecture
 ![Image](https://github.com/user-attachments/assets/d9a2c533-dae1-4b52-8209-a2e503ada5a9)
-![Image](https://github.com/user-attachments/assets/c1daf391-73d1-44e3-8215-d05e612d5f86)
 
 ---
 
